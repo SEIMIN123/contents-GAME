@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background: url(https://github.com/SEIMIN123/contents-GAME/blob/main/%ED%94%BD%EC%85%80%EB%B0%B0%EA%B2%BD.jpg?raw=true);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root > div {
+  width: 50vw;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root > div > div {
+  width: 500px;
+  height: 500px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root > div > div:nth-child(1) {
+<<<<<<< HEAD
+  width: 800px;
+  height: 500px;
+=======
+  width: 400px;
+  height: 400px;
+>>>>>>> ver
+  background: url(https://github.com/SEIMIN123/contents-GAME/blob/main/%EC%83%8C%EC%A6%88.png?raw=truee);
+  background-size: cover;
+  background-position: center center;
+}
+
+<<<<<<< HEAD
+#root > div > div:nth-child(n+2) {
+  width: 500px;
+  height: 80px;
+  background-color: #fff;
+}
+=======
+#root > div > div:nth-child(even) {
+  width: 400px;
+  height: 50px;
+  background-color: #fff;
+}
+
+#root > div > .box2-1 {
+  height: 50px;
+}
+
+#root > div > .box2-2 {
+  height: 50px;
+}
+
+#root input {
+  width: 250px;
+  font-size: 25px;
+  border-radius: 15px;
+  border: solid #ebe4e4;
+  padding-left: 20px;
+}
+/*# sourceMappingURL=login.css.map */
+>>>>>>> ver
