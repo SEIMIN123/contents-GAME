@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root div {
+  width: 45vw;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+}
+
+#root > div > div:nth-child(1) {
+  height: 15vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#root > div > div:nth-child(1) > div {
+  width: 60px;
+  height: 60px;
+}
+
+#root > div > div:nth-child(2) {
+  height: 15vh;
+}
+
+#root > div > div:nth-child(2) > div {
+  width: 45vw;
+  height: 5vh;
+}
+
+#root > div > div:nth-child(3) {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#root > div > div:nth-child(3) > div {
+  width: 15vw;
+  height: 1px;
+  border: 1px solid black;
+}
+
+#root > div > div:nth-child(4) {
+  height: 90vh;
+}
+
+#root > div > div:nth-child(5) {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#root > div > div:nth-child(5) > div {
+  width: 15vw;
+  height: 1px;
+  border: 1px solid black;
+}
+
+#root > div > div:nth-child(6) {
+  height: 90vh;
+}
