@@ -84,6 +84,8 @@
 }
 
 #root > div > div:nth-child(4) {
+  background: url(http://www.retroremember.co.kr/data/item/1605959664/thumb-29669891007718023_1790862241_500x400.jpg);
+  background-size: cover;
   height: 90vh;
 }
 
@@ -111,4 +113,6 @@
 
 #root > div > div:nth-child(6) {
   height: 90vh;
+  background: url(http://www.retroremember.co.kr/data/item/1605083357/thumb-36921983768420843_1528500475_350x250.jpg);
+  background-size: cover;
 }
