@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .side {
+  width: 10vw;
+  height: 100vh;
+  position: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(https://us.123rf.com/450wm/praewpailin/praewpailin1902/praewpailin190200677/116729358-%EC%9C%84%EC%97%90%EC%84%9C-%EB%B3%B8-%EA%B2%BD%EC%9E%AC-%EB%8B%A8%ED%92%8D%EB%82%98%EB%AC%B4-%EB%86%8D%EA%B5%AC-%EC%BD%94%ED%8A%B8-%EB%B0%94%EB%8B%A5-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%ED%8C%A8%ED%84%B4%EA%B3%BC-%EC%A7%88%EA%B0%90%EC%9E%85%EB%8B%88%EB%8B%A4-%EB%B2%A1%ED%84%B0-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%A0%88%EC%9D%B4-%EC%85%98-.jpg?ver=6);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+}
+
+#root .side > div {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 100px;
+  border: 1px solid black;
+}
+
+#root .box {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .box > div {
+  width: 45vw;
+  height: 100vh;
+  background-color: #413f3f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .box > div > div:nth-child(1) {
+  width: 45vw;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(https://us.123rf.com/450wm/praewpailin/praewpailin1902/praewpailin190200677/116729358-%EC%9C%84%EC%97%90%EC%84%9C-%EB%B3%B8-%EA%B2%BD%EC%9E%AC-%EB%8B%A8%ED%92%8D%EB%82%98%EB%AC%B4-%EB%86%8D%EA%B5%AC-%EC%BD%94%ED%8A%B8-%EB%B0%94%EB%8B%A5-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%ED%8C%A8%ED%84%B4%EA%B3%BC-%EC%A7%88%EA%B0%90%EC%9E%85%EB%8B%88%EB%8B%A4-%EB%B2%A1%ED%84%B0-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%A0%88%EC%9D%B4-%EC%85%98-.jpg?ver=6);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .box > div > div:nth-child(1) > div {
+  width: 10vw;
+  height: 15vh;
+  background-color: #9b9b9b;
+  background: url(https://www.kipost.net/news/photo/202003/203540_44371_1042.jpg);
+  background-size: cover;
+}
+
+#root .box > div > div:nth-child(1) > div:nth-child(2) {
+  width: 45vw;
+  height: 100vh;
+  background: url(https://us.123rf.com/450wm/praewpailin/praewpailin1902/praewpailin190200677/116729358-%EC%9C%84%EC%97%90%EC%84%9C-%EB%B3%B8-%EA%B2%BD%EC%9E%AC-%EB%8B%A8%ED%92%8D%EB%82%98%EB%AC%B4-%EB%86%8D%EA%B5%AC-%EC%BD%94%ED%8A%B8-%EB%B0%94%EB%8B%A5-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%ED%8C%A8%ED%84%B4%EA%B3%BC-%EC%A7%88%EA%B0%90%EC%9E%85%EB%8B%88%EB%8B%A4-%EB%B2%A1%ED%84%B0-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%A0%88%EC%9D%B4-%EC%85%98-.jpg?ver=6);
+  background-size: cover;
+  background: url(https://cdn.xxl.thumbs.canstockphoto.co.kr/%EC%84%A0%EB%B0%98-%EB%A9%8D%EC%B2%AD%ED%95%9C-eps-%EB%B2%A1%ED%84%B0_csp13364781.jpg);
+  background-size: cover;
+  border: 1px solid black;
+}
