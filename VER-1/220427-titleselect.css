@@ -62,7 +62,6 @@
 #root .box > div {
   width: 45vw;
   height: 100vh;
-  background-color: #413f3f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
