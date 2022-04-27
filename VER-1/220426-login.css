@@ -6,7 +6,7 @@
 #root {
   width: 100vw;
   height: 100vh;
-  background-color: #BC2B17;
+  background-color: #9916f0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,10 +19,10 @@
 }
 
 #root > div {
-  width: 45vw;
+  width: 55vw;
   height: 100vh;
-  background: url(https://www.urbanbrush.net/web/wp-content/uploads/edd/2020/04/urbanbrush-20200409002718831606.jpg);
-  background-size: contain;
+  background: url(https://www.urbanbrush.net/web/wp-content/uploads/edd/2019/04/urbanbrush-20190403014650317241.png);
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,12 +35,12 @@
 }
 
 #root > div > div {
-  width: 17vw;
-  height: 23vh;
+  width: 40vw;
+  height: 40vh;
   background-color: #e4e2e2;
+  background: url(https://i.pinimg.com/550x/8f/fd/32/8ffd326dcb4d76661fba1187ebc1e444.jpg);
+  background-size: cover;
   border-radius: 30px;
-  margin-bottom: 140px;
-  margin-right: -13px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -55,6 +55,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#root button {
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 50px;
 }
 
 #root input {

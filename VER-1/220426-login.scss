@@ -11,39 +11,42 @@
     border: 1px solid black;
   }
 
-  @media (max-width) {
-
-  }
-
   #root {
 
     width: 100vw;
     height: 100vh;
-    background-color: #BC2B17;
+    background-color: #9916f0;
     @include flex(flex,center,center);
-
 
     & > div {
 
-      width: 45vw;
+      width: 55vw;
       height: 100vh;
-      background: url(https://www.urbanbrush.net/web/wp-content/uploads/edd/2020/04/urbanbrush-20200409002718831606.jpg);
-      background-size:contain;
+      background: url(https://www.urbanbrush.net/web/wp-content/uploads/edd/2019/04/urbanbrush-20190403014650317241.png);
+      background-size:cover;
       @include flex(flex,center,center);
     }
 
     & > div > div {
 
-      width: 17vw;
-      height: 23vh;
+      width: 40vw;
+      height: 40vh;
       background-color: rgb(228, 226, 226);
+      background: url(https://i.pinimg.com/550x/8f/fd/32/8ffd326dcb4d76661fba1187ebc1e444.jpg);
+      background-size: cover;
       border-radius: 30px;;
-      margin-bottom: 140px;
-      margin-right: -13px;
       flex-direction: column;
       @include border;
       @include flex(flex,center,center);
 
+    }
+
+    button {
+
+      width: 200px;
+      height: 50px;
+      border-radius: 50px;
+      margin: 50px;
     }
 
     input {
