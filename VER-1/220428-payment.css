@@ -63,7 +63,7 @@
 #root .box1 {
   width: 90vw;
   height: 100vh;
-  background-color: #b9b9b9;
+  background-color: #5f5f5f;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -83,11 +83,7 @@
 #root .box1 > div {
   width: 80vw;
   height: 100vh;
-  background-color: #5f5d5d;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  background-color: #b3b3b3;
   border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,4 +94,91 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#root .box1 > div > div {
+  width: 30vw;
+  height: 95vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #d8d8d8;
+  margin: 10px;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .box1 > div > div:nth-child(2) {
+  width: 35vw;
+  height: 85vh;
+  margin: 60px;
+}
+
+#root .box1 > div > div > div {
+  width: 25vw;
+  height: 23vw;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+#root .box1 > div > div > div:nth-child(1) {
+  width: 25vw;
+  height: 20vw;
+  margin: 10px;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .box1 > div > div > div:nth-child(2) {
+  width: 25vw;
+  height: 30vw;
+  margin: 10px;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#root .box1 > div > div > div > div {
+  width: 10vw;
+  height: 10vh;
+  margin: 20px;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .box1 > div > div:nth-child(2) > div {
+  width: 30vw;
+  height: 60vh;
 }

@@ -51,7 +51,7 @@ align-items: ($a);
   .box1{
     width: 90vw;
     height: 100vh;
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(95, 95, 95);
     flex-direction: column;
   
     @include border;
@@ -62,11 +62,76 @@ align-items: ($a);
 
     width: 80vw;
     height: 100vh;
-    background-color: rgb(95, 93, 93);
-
-    flex-direction: column;
+    background-color: rgb(179, 179, 179);
     @include border;
     @include flex(flex,center,center);
+  }
+
+  .box1 > div > div {
+
+    width: 30vw;
+    height: 95vh;
+    flex-direction: column;
+    background-color: rgb(216, 216, 216);
+    margin: 10px;
+    @include border;
+    @include flex(flex,center,center);
+
+  }
+
+  .box1 > div > div:nth-child(2) {
+
+    width: 35vw;
+    height: 85vh;
+    margin: 60px;
+  }
+
+  .box1 > div > div > div {
+
+    width: 25vw;
+    height: 23vw;
+    margin: 10px;
+
+    @include border;
+  }
+
+  .box1 > div > div > div:nth-child(1) {
+
+    width: 25vw;
+    height: 20vw;
+    margin: 10px;
+
+    @include border;
+    @include flex(flex,center,center);
+
+  }
+
+  .box1 > div > div > div:nth-child(2) {
+
+    width: 25vw;
+    height: 30vw;
+    margin: 10px;
+
+    @include border;
+    @include flex(flex,flex-end,flex-end);
+  }
+
+  .box1 > div > div > div > div{
+
+    width: 10vw;
+    height: 10vh;
+    margin: 20px;
+
+    @include border;
+    @include flex(flex,center,center);
+
+  }
+
+  .box1 > div > div:nth-child(2) > div {
+
+    width: 30vw;
+    height: 60vh;
+
   }
 
 
