@@ -48,6 +48,7 @@
 #root .box {
   width: 100vw;
   height: 100vh;
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,6 +63,7 @@
 #root .box > div {
   width: 45vw;
   height: 100vh;
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,8 +82,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(https://us.123rf.com/450wm/praewpailin/praewpailin1902/praewpailin190200677/116729358-%EC%9C%84%EC%97%90%EC%84%9C-%EB%B3%B8-%EA%B2%BD%EC%9E%AC-%EB%8B%A8%ED%92%8D%EB%82%98%EB%AC%B4-%EB%86%8D%EA%B5%AC-%EC%BD%94%ED%8A%B8-%EB%B0%94%EB%8B%A5-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%ED%8C%A8%ED%84%B4%EA%B3%BC-%EC%A7%88%EA%B0%90%EC%9E%85%EB%8B%88%EB%8B%A4-%EB%B2%A1%ED%84%B0-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%A0%88%EC%9D%B4-%EC%85%98-.jpg?ver=6);
-  background-size: cover;
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,6 +98,7 @@
   width: 10vw;
   height: 15vh;
   background-color: #9b9b9b;
+  border: 1px solid black;
 }
 
 #root .box > div > div:nth-child(1) > div:nth-child(2) {
@@ -104,6 +106,7 @@
   height: 90vh;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,66 +116,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(https://us.123rf.com/450wm/praewpailin/praewpailin1902/praewpailin190200677/116729358-%EC%9C%84%EC%97%90%EC%84%9C-%EB%B3%B8-%EA%B2%BD%EC%9E%AC-%EB%8B%A8%ED%92%8D%EB%82%98%EB%AC%B4-%EB%86%8D%EA%B5%AC-%EC%BD%94%ED%8A%B8-%EB%B0%94%EB%8B%A5-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%ED%8C%A8%ED%84%B4%EA%B3%BC-%EC%A7%88%EA%B0%90%EC%9E%85%EB%8B%88%EB%8B%A4-%EB%B2%A1%ED%84%B0-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%A0%88%EC%9D%B4-%EC%85%98-.jpg?ver=6);
-  background-size: cover;
-  background: url(https://cdn.xxl.thumbs.canstockphoto.co.kr/%EC%84%A0%EB%B0%98-%EB%A9%8D%EC%B2%AD%ED%95%9C-eps-%EB%B2%A1%ED%84%B0_csp13364781.jpg);
-  background-size: cover;
 }
 
 #root .box > div > div:nth-child(1) > div:nth-child(2) > div {
   width: 150px;
   height: 210px;
   margin: 20px;
-  margin-top: -200px;
+  border: 1px solid black;
 }
-
-#root .pic1 {
-  background: url(https://image.yes24.com/momo/TopCate10/MidCate04/939479.jpg);
-  background-size: cover;
-}
-
-#root .pic2 {
-  background: url(https://img-lb.inews24.com/image_gisa/200404/112682_01.jpg);
-  background-size: cover;
-}
-
-#root .pic3 {
-  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR15VgZNzoldwU3JdHbDo4FVz-bnv__-cEOG0gXsou9A7xElrGuFoxdR4cihyDAk0Y5nqI&usqp=CAU);
-  background-size: cover;
-}
-
-#root .pic4 {
-  background: url(https://cdn.gamemeca.com/gmdata/0000/055/624/05-0808-01.jpg);
-  background-size: cover;
-}
-
-#root .pic5 {
-  background: url(https://github.com/SEIMIN123/contents-GAME/blob/main/%EB%93%9C%EB%9E%98%EB%93%9C.png?raw=true);
-  background-size: cover;
-}
-
-#root .pic6 {
-  background: url(https://github.com/SEIMIN123/contents-GAME/blob/main/%ED%8F%AC%EC%BC%93%EB%AA%AC.png?raw=true);
-  background-size: cover;
-}
-
-#root .pic7 {
-  background: url(https://github.com/SEIMIN123/contents-GAME/blob/main/%EB%A3%A8%EC%9D%B4%EC%A7%80%EB%A7%A8%EC%85%98.png?raw=true);
-  background-size: cover;
-}
-
-#root .pic8 {
-  background: url(https://github.com/SEIMIN123/contents-GAME/blob/main/%EC%BB%A4%EB%B9%84.png?raw=true);
-  background-size: cover;
-}
-
-#root .logo1 {
-  background: url(https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcEQxZe%2FbtqExs4W9E2%2FbwGo0OiXYoXGU9b2Vy3U30%2Fimg.jpg);
-  background-size: cover;
-}
-
-#root .logo2 {
-  background: url(https://yt3.ggpht.com/ytc/AKedOLQ2wgKUx5nKzKftiSOX-up9yJ_WYlANBRQGJtsr1g=s900-c-k-c0x00ffffff-no-rj);
-  background-size: cover;
-}
-/*# sourceMappingURL=220427-titleselect.css.map */
