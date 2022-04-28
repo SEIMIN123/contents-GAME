@@ -71,6 +71,15 @@ align-items: ($a);
   @include flex(flex,center,center);
 }
 
+.box1 > div > div:nth-child(1) > div {
+
+  width: 50vw;
+  height: 50vh;
+
+  @include border;
+  @include flex(flex,center,center);
+}
+
 .box1 > div > div {
 
   width: 80vw;
@@ -78,7 +87,6 @@ align-items: ($a);
   margin: 10px;
   @include border;
   @include flex(flex,center,center);
-
 }
 
 .box1 > div > div:nth-child(2) {
@@ -87,9 +95,6 @@ align-items: ($a);
   height: 30vh;
   @include border;
   @include flex(flex,center,center);
-
 }
 
-
-
-  }
+}

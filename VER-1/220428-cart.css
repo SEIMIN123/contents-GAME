@@ -99,6 +99,21 @@
           align-items: center;
 }
 
+#root .box1 > div > div:nth-child(1) > div {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #root .box1 > div > div {
   width: 80vw;
   height: 60vh;
