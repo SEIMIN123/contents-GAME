@@ -76,8 +76,6 @@
 }
 
 #root .box > div > div:nth-child(1) {
-  width: 45vw;
-  height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
