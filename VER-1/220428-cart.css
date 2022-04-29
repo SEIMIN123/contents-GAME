@@ -63,7 +63,7 @@
 #root .box1 {
   width: 90vw;
   height: 100vh;
-  background-color: bisque;
+  background-color: gray;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -83,6 +83,7 @@
 #root .box1 > div:nth-child(1) {
   width: 85vw;
   height: 95vh;
+  background-color: #e4e4e4;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -102,6 +103,7 @@
 #root .box1 > div > div:nth-child(1) > div {
   width: 50vw;
   height: 50vh;
+  background-color: #494949;
   border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,6 +120,7 @@
   width: 80vw;
   height: 60vh;
   margin: 10px;
+  background-color: #b1b1b1;
   border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,6 +136,7 @@
 #root .box1 > div > div:nth-child(2) {
   width: 30vw;
   height: 30vh;
+  background-color: #494949;
   border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
