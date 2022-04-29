@@ -22,7 +22,7 @@ align-items: ($a);
 
   width: 10vw;
   height: 100vh;
-  background-color: rgb(201, 201, 201);
+  background : url(https://us.123rf.com/450wm/voysla/voysla1603/voysla160300034/53965037-%EB%B9%9B-%EB%A7%88%EB%A3%A8-%EC%9B%90%ED%99%9C%ED%95%9C-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%94%84-%EB%AA%A8%EC%9E%90%EC%9D%B4%ED%81%AC-%ED%83%80%EC%9D%BC%EC%9E%85%EB%8B%88%EB%8B%A4-%EA%B2%AC%EB%B3%B8%EC%97%90%EC%84%9C-%ED%8E%B8%EC%A7%91-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%8C%A8%ED%84%B4%EC%9E%85%EB%8B%88%EB%8B%A4-.jpg?ver=6);
   position: fixed;
   flex-direction: column;
   @include flex(flex,center,center);
@@ -43,17 +43,15 @@ align-items: ($a);
     width: 100vw;
     height: 100vh;
   
-    @include border;
     @include flex(flex,flex-end,center);
   }
   
   .box1{
     width: 90vw;
     height: 100vh;
-    background-color: rgb(95, 95, 95);
+    background : url(https://us.123rf.com/450wm/voysla/voysla1603/voysla160300034/53965037-%EB%B9%9B-%EB%A7%88%EB%A3%A8-%EC%9B%90%ED%99%9C%ED%95%9C-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%94%84-%EB%AA%A8%EC%9E%90%EC%9D%B4%ED%81%AC-%ED%83%80%EC%9D%BC%EC%9E%85%EB%8B%88%EB%8B%A4-%EA%B2%AC%EB%B3%B8%EC%97%90%EC%84%9C-%ED%8E%B8%EC%A7%91-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%8C%A8%ED%84%B4%EC%9E%85%EB%8B%88%EB%8B%A4-.jpg?ver=6);
     flex-direction: column;
   
-    @include border;
     @include flex(flex,center,center);
   }
 
@@ -61,9 +59,7 @@ align-items: ($a);
 
     width: 80vw;
     height: 100vh;
-    background-color: rgb(179, 179, 179);
-
-    @include border;
+    background : url(https://us.123rf.com/450wm/voysla/voysla1603/voysla160300034/53965037-%EB%B9%9B-%EB%A7%88%EB%A3%A8-%EC%9B%90%ED%99%9C%ED%95%9C-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%94%84-%EB%AA%A8%EC%9E%90%EC%9D%B4%ED%81%AC-%ED%83%80%EC%9D%BC%EC%9E%85%EB%8B%88%EB%8B%A4-%EA%B2%AC%EB%B3%B8%EC%97%90%EC%84%9C-%ED%8E%B8%EC%A7%91-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%8C%A8%ED%84%B4%EC%9E%85%EB%8B%88%EB%8B%A4-.jpg?ver=6);
     @include flex(flex,center,center);
   }
 
@@ -72,8 +68,6 @@ align-items: ($a);
     width: 65vw;
     height: 70vh;
     flex-direction: column;
-
-    @include border;
     @include flex(flex,center,center);
 
   }

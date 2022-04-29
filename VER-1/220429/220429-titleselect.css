@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .side {
+  width: 10vw;
+  height: 100vh;
+  background: url(https://us.123rf.com/450wm/voysla/voysla1603/voysla160300034/53965037-%EB%B9%9B-%EB%A7%88%EB%A3%A8-%EC%9B%90%ED%99%9C%ED%95%9C-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%94%84-%EB%AA%A8%EC%9E%90%EC%9D%B4%ED%81%AC-%ED%83%80%EC%9D%BC%EC%9E%85%EB%8B%88%EB%8B%A4-%EA%B2%AC%EB%B3%B8%EC%97%90%EC%84%9C-%ED%8E%B8%EC%A7%91-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%8C%A8%ED%84%B4%EC%9E%85%EB%8B%88%EB%8B%A4-.jpg);
+  position: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+}
+
+#root .side > div {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 100px;
+  border: 1px solid black;
+}
+
+#root .box {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .box1 {
+  width: 90vw;
+  height: 100vh;
+  background-color: #b9b9b9;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(https://us.123rf.com/450wm/voysla/voysla1603/voysla160300034/53965037-%EB%B9%9B-%EB%A7%88%EB%A3%A8-%EC%9B%90%ED%99%9C%ED%95%9C-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%94%84-%EB%AA%A8%EC%9E%90%EC%9D%B4%ED%81%AC-%ED%83%80%EC%9D%BC%EC%9E%85%EB%8B%88%EB%8B%A4-%EA%B2%AC%EB%B3%B8%EC%97%90%EC%84%9C-%ED%8E%B8%EC%A7%91-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%8C%A8%ED%84%B4%EC%9E%85%EB%8B%88%EB%8B%A4-.jpg);
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .box1 > div {
+  width: 70vw;
+  height: 100vh;
+  background: url(https://us.123rf.com/450wm/voysla/voysla1603/voysla160300034/53965037-%EB%B9%9B-%EB%A7%88%EB%A3%A8-%EC%9B%90%ED%99%9C%ED%95%9C-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%94%84-%EB%AA%A8%EC%9E%90%EC%9D%B4%ED%81%AC-%ED%83%80%EC%9D%BC%EC%9E%85%EB%8B%88%EB%8B%A4-%EA%B2%AC%EB%B3%B8%EC%97%90%EC%84%9C-%ED%8E%B8%EC%A7%91-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%8C%A8%ED%84%B4%EC%9E%85%EB%8B%88%EB%8B%A4-.jpg);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .box1 > div > div:nth-child(1) {
+  width: 45vw;
+  height: 41vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .title {
+  width: 70vw;
+  height: 80vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .title > div {
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+}
+
+#root .logo {
+  background: url(https://www.copetti.org/images/consoles/ps2/international.71e8126f72c944c3b2887685a6583cb0ef47bba48e421618b1e12bdfefff42ae.png);
+  background-size: cover;
+}
+
+#root .pic1 {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcVPUQC7a9W1aB6tkJ9OcSX7c99NIOTOvn5EH9gex0yYKXS3L55T1FLXV83Q1Vo02V3dU&usqp=CAU);
+  background-size: cover;
+}
+
+#root .pic2 {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDl5BdxeO5XRjVc-9ky_g3GXxzLFDUhzoQ90aDJ2XZh-fl_chkPORziKDNqvSG1qs_pHY&usqp=CAU);
+  background-size: cover;
+}
+
+#root .pic3 {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuUG1ecbeIFSItkU7O4Tf4rYWF5rpihrTwacLYpRdGJFMZ_Z0VMYTz1UHkuYVg221bHso&usqp=CAU);
+  background-size: cover;
+}
+
+#root .pic4 {
+  background: url(https://file.newswire.co.kr/data/datafile2/thumb_480/2006/10/2006100211597484670.66665800.jpg);
+  background-size: cover;
+}
+
+#root .pic5 {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEArG0jcBVE_KQyzYZeAxvzKnmJGRIBXNQj4lteHPBZwLGwSuu8aV01Zf5J7ZwhqHf9Gs&usqp=CAU);
+  background-size: cover;
+}
+
+#root .pic6 {
+  background: url(https://static.news.zumst.com/images/12/2015/12/06/69cab95073ce476c81148dd3b43bb42e.jpg);
+  background-size: cover;
+}
+
+#root .pic7 {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBH7zUfpZvxag-cVpe67f2h-sOptnJ36YhXg21Gg_W45MT_EtEEo05wFb2rxL1JR_XuDw&usqp=CAU);
+  background-size: cover;
+}
+
+#root .pic8 {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg6B3KZuNC-AVf9yfHul2IX19YTvOrbmJ8jNAdkCobSwC6BijOwJb35yr93BNOBgTXkBk&usqp=CAU);
+  background-size: cover;
+}
+
+#root .pic9 {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnN1f0lq8sauaW9LR3N-Qd52uxp_13XKT3u7uG4BdcheDH4Bv0tK0KdO08HNvpGqn3o30&usqp=CAU);
+  background-size: cover;
+}
+
+#root .pic10 {
+  background: url(https://m.media-amazon.com/images/I/51UTQTqkPaL.jpg);
+  background-size: cover;
+}
+
+#root .pic11 {
+  background: url(https://image.yes24.com/momo/TopCate11/MidCate05/1046305.jpg);
+  background-size: cover;
+}
+
+#root .pic12 {
+  background: url(https://blog.kakaocdn.net/dn/20FWt/btqNLn2PPCd/q0u7U7HeaCiZRK2ykw77JK/img.jpg);
+  background-size: cover;
+}

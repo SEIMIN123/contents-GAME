@@ -1,0 +1,162 @@
+*{margin: 0; padding: 0;}
+
+@mixin flex ($d, $j, $a){
+
+display: ($d);
+justify-content: ($j);
+align-items: ($a);
+}
+
+@mixin border {
+  border: 1px solid black;
+}
+
+// --------------------------------------
+
+#root {
+
+  width: 100vw;
+  height: 100vh;
+
+  @include flex(flex,flex-start,center);
+
+  .side {
+
+  width: 10vw;
+  height: 100vh;
+  background: url(https://us.123rf.com/450wm/voysla/voysla1603/voysla160300034/53965037-%EB%B9%9B-%EB%A7%88%EB%A3%A8-%EC%9B%90%ED%99%9C%ED%95%9C-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%94%84-%EB%AA%A8%EC%9E%90%EC%9D%B4%ED%81%AC-%ED%83%80%EC%9D%BC%EC%9E%85%EB%8B%88%EB%8B%A4-%EA%B2%AC%EB%B3%B8%EC%97%90%EC%84%9C-%ED%8E%B8%EC%A7%91-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%8C%A8%ED%84%B4%EC%9E%85%EB%8B%88%EB%8B%A4-.jpg?ver=6);
+  position: fixed;
+  flex-direction: column;
+  @include flex(flex,center,center);
+  @include border;
+  }
+
+  .side > div {
+
+    width: 50px;
+    height: 50px;
+    margin-bottom: 100px;
+    @include border;
+  }
+
+//--------------------------------------
+
+  .box {
+    width: 100vw;
+    height: 100vh;
+    
+    @include flex(flex,flex-end,center);
+  }
+  .box > div {
+    width: 45vw;
+    height: 100vh;
+
+    @include flex(flex,center,center);
+  }
+
+  .box > div > div:nth-child(1) {
+    background: url(https://us.123rf.com/450wm/voysla/voysla1603/voysla160300034/53965037-%EB%B9%9B-%EB%A7%88%EB%A3%A8-%EC%9B%90%ED%99%9C%ED%95%9C-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%94%84-%EB%AA%A8%EC%9E%90%EC%9D%B4%ED%81%AC-%ED%83%80%EC%9D%BC%EC%9E%85%EB%8B%88%EB%8B%A4-%EA%B2%AC%EB%B3%B8%EC%97%90%EC%84%9C-%ED%8E%B8%EC%A7%91-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%8C%A8%ED%84%B4%EC%9E%85%EB%8B%88%EB%8B%A4-.jpg?ver=6);
+    background-size: cover;
+    flex-direction: column;
+    @include flex(flex,center,center);
+  }
+
+  .box > div > div:nth-child(1) > div {
+
+    width: 10vw;
+    height: 10vh;
+  }
+
+
+  .box > div > div:nth-child(1) > div:nth-child(2) {
+
+    width: 50vw;
+    height: 90vh;
+    background: url(https://us.123rf.com/450wm/voysla/voysla1603/voysla160300034/53965037-%EB%B9%9B-%EB%A7%88%EB%A3%A8-%EC%9B%90%ED%99%9C%ED%95%9C-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%94%84-%EB%AA%A8%EC%9E%90%EC%9D%B4%ED%81%AC-%ED%83%80%EC%9D%BC%EC%9E%85%EB%8B%88%EB%8B%A4-%EA%B2%AC%EB%B3%B8%EC%97%90%EC%84%9C-%ED%8E%B8%EC%A7%91-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%8C%A8%ED%84%B4%EC%9E%85%EB%8B%88%EB%8B%A4-.jpg?ver=6);
+    flex-direction: column;
+    @include flex(flex,center,center);
+
+  }
+
+  .box > div > div:nth-child(1) > div:nth-child(2) > div {
+    
+    width: 15vw;
+    height: 20vh;
+    margin: 10px;
+  }
+
+// -------------------------------------
+
+.logo1 {
+
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF6KL3_-5arjxR7xzeVuTMjMlEsOwZpgY9f2dKUoo5N1z08dscqIvdQDYr_t43TFVpGWs&usqp=CAU);
+  background-size : cover; 
+
+}
+
+.logo2 {
+
+  background: url(https://cdn.shopify.com/s/files/1/0249/5892/6941/products/Nintendo-Logo-1977-1983stickeriron-on_3840x.png?v=1609671685);
+  background-size : cover; 
+
+}
+
+.pic1 {
+
+  background: url(https://image.shutterstock.com/image-photo/london-england-07052018-original-sony-260nw-1584733528.jpg)
+  ;
+  background-size: cover;
+
+}
+
+.pic2 {
+
+  background: url(https://img.dtcn.com/image/digitaltrends/ps2-6.jpg)
+  ;
+  background-size: cover;
+
+}
+
+.pic3 {
+
+  background: url(https://mblogthumb-phinf.pstatic.net/20140424_47/coway_mall_1398303746363tO91T_PNG/20140424_103229.png?type=w2)
+  ;
+  background-size: cover;
+
+}
+
+.pic4 {
+
+  background: url(https://img.etnews.com/cms/uploadfiles/afieldfile/2013/09/30/ps4-hrdware-large18.jpg)
+  ;
+  background-size: cover;
+
+}
+.pic5 {
+
+  background: url(https://mblogthumb-phinf.pstatic.net/MjAxOTA2MTZfMjI2/MDAxNTYwNjgxOTMzMjQ1.cdinfWub4YcyQBI7yIQNcIUNKFm9FkEiIF8K7Co-kjAg.11Uev5dDnhD0qlbPwF_mH90aqr7vyNDoOzFC97FbYkMg.JPEG.kyj930516/fami.jpg?type=w800)
+  ;
+  background-size: cover;
+
+}.pic6 {
+
+  background: url(https://upload.wikimedia.org/wikipedia/commons/3/30/Super_Famicom_JPN.jpg)
+  ;
+  background-size: cover;
+
+}.pic7 {
+
+  background: url(https://m.media-amazon.com/images/I/91rHLnOwrhL._SL1500_.jpg)
+  ;
+  background-size: cover;
+
+}.pic8 {
+
+  background: url(https://underkg.co.kr:44391/files/attach/images/145/656/828/002/24e456b619de86229c5d890136a8c574.jpg)
+  ;
+  background-size: cover;
+
+}
+
+
+}

@@ -1,0 +1,123 @@
+*{margin: 0; padding: 0;}
+
+@mixin flex ($d, $j, $a){
+
+display: ($d);
+justify-content: ($j);
+align-items: ($a);
+}
+
+@mixin border {
+  border: 1px solid black;
+}
+
+
+#root {
+
+  width: 100vw;
+  height: 100vh;
+
+  @include flex(flex,flex-start,center);
+
+  .side {
+
+  width: 10vw;
+  height: 100vh;
+  background : url(https://us.123rf.com/450wm/voysla/voysla1603/voysla160300034/53965037-%EB%B9%9B-%EB%A7%88%EB%A3%A8-%EC%9B%90%ED%99%9C%ED%95%9C-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%94%84-%EB%AA%A8%EC%9E%90%EC%9D%B4%ED%81%AC-%ED%83%80%EC%9D%BC%EC%9E%85%EB%8B%88%EB%8B%A4-%EA%B2%AC%EB%B3%B8%EC%97%90%EC%84%9C-%ED%8E%B8%EC%A7%91-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%8C%A8%ED%84%B4%EC%9E%85%EB%8B%88%EB%8B%A4-.jpg?ver=6);
+  position: fixed;
+  flex-direction: column;
+  @include flex(flex,center,center);
+  @include border;
+  }
+
+  .side > div {
+
+    width: 50px;
+    height: 50px;
+    margin-bottom: 100px;
+    @include border;
+  }
+
+  // ------------------------------------
+
+  .box {
+    width: 100vw;
+    height: 100vh;
+  
+    @include flex(flex,flex-end,center);
+  }
+  
+  .box1{
+    width: 90vw;
+    height: 100vh;
+    background : url(https://us.123rf.com/450wm/voysla/voysla1603/voysla160300034/53965037-%EB%B9%9B-%EB%A7%88%EB%A3%A8-%EC%9B%90%ED%99%9C%ED%95%9C-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%94%84-%EB%AA%A8%EC%9E%90%EC%9D%B4%ED%81%AC-%ED%83%80%EC%9D%BC%EC%9E%85%EB%8B%88%EB%8B%A4-%EA%B2%AC%EB%B3%B8%EC%97%90%EC%84%9C-%ED%8E%B8%EC%A7%91-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%8C%A8%ED%84%B4%EC%9E%85%EB%8B%88%EB%8B%A4-.jpg?ver=6);
+    flex-direction: column;
+  
+    @include flex(flex,center,center);
+  }
+
+  .box1 > div {
+
+    width: 80vw;
+    height: 100vh;
+    background : url(https://us.123rf.com/450wm/voysla/voysla1603/voysla160300034/53965037-%EB%B9%9B-%EB%A7%88%EB%A3%A8-%EC%9B%90%ED%99%9C%ED%95%9C-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%94%84-%EB%AA%A8%EC%9E%90%EC%9D%B4%ED%81%AC-%ED%83%80%EC%9D%BC%EC%9E%85%EB%8B%88%EB%8B%A4-%EA%B2%AC%EB%B3%B8%EC%97%90%EC%84%9C-%ED%8E%B8%EC%A7%91-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%8C%A8%ED%84%B4%EC%9E%85%EB%8B%88%EB%8B%A4-.jpg?ver=6);
+    flex-direction: column;;
+
+    @include flex(flex,center,center);
+  }
+
+  .box1 > div > div {
+    width: 50vw;
+    height: 50vh;
+    margin: 10px;
+    @include flex(flex,center,center);
+
+  }
+
+
+
+  
+  //-------------------------------------- 
+
+  .box1 > div > div:nth-child(1) {
+    width: 20vw;
+    height: 35vh;
+    border-radius: 30px;
+    background: url(https://github.com/SEIMIN123/contents-GAME/blob/main/Untitled-1.jpg?raw=true);
+    background-size: cover;
+    @include flex(flex,center,center);
+
+  }
+
+  .box1 > div > div:nth-child(2) {
+    width: 30vw;
+    height: 60vh;
+    @include flex(flex,center,center);
+
+  }
+
+  .menu {
+    
+    flex-direction: column;
+  }
+
+    button {
+
+      width: 10vw;
+      height: 10vh;
+      margin: 20px;
+      border-radius: 30px;
+      font-size: 20px;
+      font-weight: bold;
+
+    }
+
+
+
+
+
+
+
+
+
+}
