@@ -1,0 +1,127 @@
+*{margin: 0; padding: 0;}
+
+@mixin flex ($d, $j, $a){
+
+display: ($d);
+justify-content: ($j);
+align-items: ($a);
+}
+
+@mixin border {
+  border: 1px solid black;
+}
+
+
+#root {
+
+  width: 100vw;
+  height: 100vh;
+
+  @include flex(flex,flex-start,center);
+
+  .side {
+
+  width: 10vw;
+  height: 100vh;
+  background-color: rgb(201, 201, 201);
+  position: fixed;
+  flex-direction: column;
+  @include flex(flex,center,center);
+  @include border;
+  }
+
+  .side > div {
+
+    width: 50px;
+    height: 50px;
+    margin-bottom: 100px;
+    @include border;
+  }
+
+  // ------------------------------------
+
+  .box {
+    width: 100vw;
+    height: 100vh;
+  
+    @include border;
+    @include flex(flex,flex-end,center);
+  }
+  
+  .box1{
+    width: 90vw;
+    height: 100vh;
+    background-color: rgb(95, 95, 95);
+    flex-direction: column;
+  
+    @include border;
+    @include flex(flex,center,center);
+  }
+
+  .box1 > div {
+
+    width: 80vw;
+    height: 100vh;
+    background-color: rgb(179, 179, 179);
+    flex-direction: column;;
+
+    @include border;
+    @include flex(flex,center,center);
+  }
+
+  .box1 > div > div {
+    width: 50vw;
+    height: 50vh;
+    margin: 10px;
+    background-color: rgb(216, 216, 216);
+    @include border;
+    @include flex(flex,center,center);
+
+  }
+
+  .box1 > div > div:nth-child(1) {
+    width: 20vw;
+    height: 35vh;
+    background: url(https://github.com/SEIMIN123/contents-GAME/blob/main/Untitled-1.jpg?raw=true);
+    background-size: cover;
+    @include border;
+    @include flex(flex,center,center);
+
+  }
+
+  .box1 > div > div:nth-child(2) {
+    width: 35vw;
+    height: 60vh;
+    background-color: rgb(216, 216, 216);
+    @include border;
+    @include flex(flex,center,center);
+
+  }
+
+//-------------------------------------- 
+
+  .menu {
+
+    flex-direction: column;
+  }
+
+  .menu > div {
+
+    width: 15vw;
+    height: 10vh;
+    margin: 20px;
+
+    @include border;
+    @include flex(flex,center,center);
+
+  }
+
+
+
+
+
+
+
+
+
+}
