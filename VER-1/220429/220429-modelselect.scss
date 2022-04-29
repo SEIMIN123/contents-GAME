@@ -24,7 +24,7 @@ align-items: ($a);
 
   width: 10vw;
   height: 100vh;
-  background: url(https://us.123rf.com/450wm/voysla/voysla1603/voysla160300034/53965037-%EB%B9%9B-%EB%A7%88%EB%A3%A8-%EC%9B%90%ED%99%9C%ED%95%9C-%EB%82%98%EB%AC%B4-%EB%B0%94%EB%8B%A5-%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%94%84-%EB%AA%A8%EC%9E%90%EC%9D%B4%ED%81%AC-%ED%83%80%EC%9D%BC%EC%9E%85%EB%8B%88%EB%8B%A4-%EA%B2%AC%EB%B3%B8%EC%97%90%EC%84%9C-%ED%8E%B8%EC%A7%91-%EA%B0%80%EB%8A%A5%ED%95%9C-%ED%8C%A8%ED%84%B4%EC%9E%85%EB%8B%88%EB%8B%A4-.jpg?ver=6);
+  background-color: rgb(255, 255, 255);
   position: fixed;
   flex-direction: column;
   @include flex(flex,center,center);
@@ -33,11 +33,23 @@ align-items: ($a);
 
   .side > div {
 
-    width: 50px;
+    width: 70px;
     height: 50px;
+    color: rgb(70, 70, 70);
+    background-color: rgb(202, 202, 202);
     margin-bottom: 100px;
+
+    @include flex(flex,center,center);
     @include border;
   }
+
+    .side>div:hover {
+
+      color:rgb(255, 255, 255);
+      transition: 1s;
+      cursor: pointer;
+    }
+
 
 //--------------------------------------
 
@@ -89,7 +101,7 @@ align-items: ($a);
 
 .logo1 {
 
-  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF6KL3_-5arjxR7xzeVuTMjMlEsOwZpgY9f2dKUoo5N1z08dscqIvdQDYr_t43TFVpGWs&usqp=CAU);
+  background: url(https://w7.pngwing.com/pngs/68/413/png-transparent-playstation-2-logo-video-game-sony-angle-text-nintendo.png);
   background-size : cover; 
 
 }
