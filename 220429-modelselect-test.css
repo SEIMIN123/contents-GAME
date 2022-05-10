@@ -17,11 +17,13 @@
           align-items: center;
 }
 
-#root #side {
+#root .side {
   width: 10vw;
   height: 100vh;
-  background-color: white;
+  background-color: #bdb7b7;
   position: fixed;
+  -webkit-transition: 1s;
+  transition: 1s;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -38,12 +40,80 @@
   border: 1px solid black;
 }
 
-#root #side > div {
+#root .ham {
+  margin-right: -350px;
+  border: 1px solid black;
+}
+
+#root .ham:hover {
+  cursor: pointer;
+}
+
+#root .ham-open {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  border-radius: 0% 0% 0% 0%;
+  background-color: #fff;
+}
+
+#root .line {
   width: 50px;
-  height: 50px;
-  color: #464646;
-  background-color: #cacaca;
-  margin-bottom: 100px;
+  height: 6px;
+  background-color: #ccc;
+  margin: 8px;
+  border-radius: 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border: 1px solid black;
+}
+
+#root .line1 .line-cross {
+  width: 30px;
+  -webkit-transform: rotate(45deg) translateY(10px);
+          transform: rotate(45deg) translateY(10px);
+  background: #000;
+}
+
+#root .line2 {
+  width: 50px;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+#root .line2 .line-fadeout {
+  opacity: 0;
+}
+
+#root .line3 {
+  -webkit-transform: rotate(0) translateY(0);
+          transform: rotate(0) translateY(0);
+}
+
+#root .line3 .line-cross {
+  -webkit-transform: rotate(-45deg) translateY(-10px);
+          transform: rotate(-45deg) translateY(-10px);
+  background: #000;
+}
+
+#root .textbox > div:hover {
+  color: #ccc;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#root .textbox > div {
+  width: 5vw;
+  height: 8vh;
+  margin: 70px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,15 +123,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid black;
-}
-
-#root #side > div:hover {
-  color: white;
-  -webkit-transition: 1s;
-  transition: 1s;
-  cursor: pointer;
-  text-decoration: underline;
 }
 
 #root .box {
@@ -79,7 +140,7 @@
 }
 
 #root .box > div {
-  width: 45vw;
+  width: 50vw;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;

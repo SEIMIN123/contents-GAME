@@ -20,37 +20,108 @@ align-items: ($a);
 
   @include flex(flex,flex-start,center);
 
-  #side {
+  .side {
 
   width: 10vw;
   height: 100vh;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(189, 183, 183);
   position: fixed;
+  transition: 1s;
+  // transform: translateX(-150px);
   flex-direction: column;
   @include flex(flex,center,center);
   @include border;
   }
 
-  #side > div {
+  // .side:hover {
+  //   margin-left: 0px;
+  // }
 
-    width: 50px;
-    height: 50px;
-    color: rgb(70, 70, 70);
-    background-color: rgb(202, 202, 202);
-    margin-bottom: 100px;
+  // .side:hover:before {
+  //   transition: 1s;
+  //   position: absolute;
+  // }
 
-    @include flex(flex,center,center);
+
+  .ham {
+    margin-right: -350px;
+
     @include border;
   }
 
-  #side>div:hover {
+  .ham:hover {
 
-    color:rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  .ham-open {
+
+    transform:  translateX(0px);
+    border-radius: 0% 0% 0% 0%;
+    background-color: #fff;
+  }
+
+  .line {
+
+    width: 50px;
+    height: 6px;
+    background-color: #ccc;
+    margin: 8px;
+    border-radius: 10px;
+    transition: 1s;
+    @include border;
+
+  }
+
+  .line1 .line-cross {
+
+    width: 30px;
+    transform: rotate(45deg) translateY(10px);
+    background: #000;
+  }
+
+  .line2 {
+
+    width: 50px;
+    transform: translateX(0);
+  }
+
+  .line2 .line-fadeout {
+
+    opacity: 0;
+  }
+
+  .line3 {
+
+    transform: rotate(0) translateY(0);
+  }
+
+  .line3 .line-cross {
+
+    transform: rotate(-45deg) translateY(-10px);
+    background: #000;
+  }
+
+
+  .textbox > div:hover {
+
+    color:#ccc;
     transition: 1s;
     cursor: pointer;
-    text-decoration: underline;
     }
 
+  .textbox > div {
+    width: 5vw;
+    height: 8vh;
+    margin: 70px;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    @include border;
+    @include flex(flex,center,center);
+
+  }
 
 //--------------------------------------
 
@@ -60,8 +131,10 @@ align-items: ($a);
     
     @include flex(flex,flex-end,center);
   }
+
+
   .box > div {
-    width: 45vw;
+    width: 50vw;
     height: 100vh;
 
     @include flex(flex,center,center);

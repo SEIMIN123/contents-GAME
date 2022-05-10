@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+*{box-sizing: border-box;}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+  
+}
+
+/* ---------------------------------------------------------- */
+
+nav {
+    width: 20vw; 
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    transform: translateX(-300px);
+    transition: 1s;
+}
+
+nav.nav-open {
+    transform: translateX(0px);
+    border-radius: 0% 0% 0% 0%;
+    background: rgba(255, 255, 255);
+}
+
+nav .menu-btn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    padding: 0;
+    width: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+nav .menu-btn .line {
+    padding: 0;
+    width: 50px;
+    background: #fff;
+    height: 2px;
+    margin: 5px 0;
+    transition: 1s;
+}
+
+nav .menu-btn .line.line--1 {
+    width: 30px;
+    transform: rotate(0) translateY(0);
+} 
+
+nav .menu-btn .line.line--1.line-cross {
+    width: 30px;
+    transform: rotate(45deg) translateY(10px);
+    background: rgba(0,0,0);
+}
+
+nav .menu-btn .line.line--2 {
+    width: 30px;
+    transform: translateX(0);
+}
+
+nav .menu-btn .line.line--2.line-fade-out {
+    width: 30px;
+    opacity: 0;
+}
+
+nav .menu-btn .line.line--3 {
+    width: 30px;
+    transform: rotate(0) translateY(0);
+}
+
+nav .menu-btn .line.line--3.line-cross {
+    width: 30px;
+    transform: rotate(-45deg) translateY(-10px);
+    background: rgba(0,0,0);
+}
+
+/* ---------------------------------------------------------- */
+
+nav .nav-links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-100px);
+  transition: 1s;
+}
+
+nav .nav-links.fade-in {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+nav .nav-links .link {
+    margin: 50px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(0,0,0,0.9);
+    font-weight: bold;
+    font-size: 30px;
+    transition: 1s;
+}
+
+nav .nav-links .link:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="menu-btn">
+      <div class="line line--1"></div>
+      <div class="line line--2"></div>
+      <div class="line line--3"></div>
+    </div>
+  
+    <div class="nav-links">
+      <a href="" class="link">프로필</a>
+      <a href="" class="link">장바구니</a>
+      <a href="" class="link">카드결제</a>
+      <a href="" class="link">검색</a>
+      <a href="" class="link">환경설정</a>
+    </div>
+  </nav>
+
+  <script>
+    var menuBtn = document.querySelector('.menu-btn');
+    var nav = document.querySelector('nav');
+    var lineOne = document.querySelector('nav .menu-btn .line--1');
+    var lineTwo = document.querySelector('nav .menu-btn .line--2');
+    var lineThree = document.querySelector('nav .menu-btn .line--3');
+    var link = document.querySelector('nav .nav-links');
+    menuBtn.addEventListener('click', () => {
+    nav.classList.toggle('nav-open');
+    lineOne.classList.toggle('line-cross');
+    lineTwo.classList.toggle('line-fade-out');
+    lineThree.classList.toggle('line-cross');
+    link.classList.toggle('fade-in');
+})
+  </script>
+</body>
+</html>

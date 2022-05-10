@@ -6,23 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="220429-modelselect.css">
+  <link rel="stylesheet" href="220429-modelselect-test.css">
 </head>
 <body>
   <div id="root">
-      <div class="side">
-        <div>햄버거</div>
+    <div class="side">
+      <div class="ham">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </div>
+      <div class="textbox">
         <div>프로필</div>
         <div>장바구니</div>
         <div>카드결제</div>
         <div>서치</div>
         <div>환경설정</div>
       </div>
-
-      <div class="box">
+    </div>
+    
+    <div class="box">
         <div>
           <div>
-            <div id="logo1"></div>
+            <div class="logo1"></div>
             <div>
               <div class="pic1"></div>
               <div class="pic2"></div>
@@ -47,8 +53,16 @@
     </div>
 
     <script>
+      const hamBtn = document.querySelector('.ham');
+      const lineOne = document.querySelector('.ham .line-1');
+      const lineTwo = document.querySelector('.ham .line-2');
+      const lineThree = document.querySelector('.ham .line-3');
 
-      const side = document.getElementById('logo1');
+      hamBtn.classList.toggle('ham');
+      lineOne.classList.toggle('line-corss');
+      lineTwo.classList.toggle('line-fadeout');
+      lineThree.classList('line-cross');
+
 
 
 
